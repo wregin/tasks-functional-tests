@@ -20,7 +20,7 @@ public class TasksTest {
 		// no fundo no caso desse teste será a mesma coisa pois vai rodar em máquina local, mas a ideia é como que em outros lugares
 		DesiredCapabilities cap = DesiredCapabilities.chrome();
 		WebDriver driver = new RemoteWebDriver(new URL("http://172.19.0.1:4444/wd/hub"), cap);
-		driver.navigate().to("http://localhost:8001/tasks");
+		driver.navigate().to("http://192.168.15.26:9999/tasks");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		return driver;
